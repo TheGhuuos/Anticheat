@@ -5,8 +5,10 @@ Flaws:
 
 ]]
 
+-- // services
 local Players = game:GetService("Players")
 
+-- // function: AntiSpeed/AntiTP
 Players.PlayerAdded:Connect(function(player)
 	player.CharacterAdded:Connect(function(character)
 		local HumanoidRootPart = character:WaitForChild("HumanoidRootPart")
